@@ -36,7 +36,7 @@
   font-weight: 400;
   color: var(--branco);
   text-align: center;
-  background: url(/img/Vector.svg) no-repeat;
+  background: url("./img/Vector.svg") no-repeat;
   background-position: calc(50% - 120px);
 }
 
