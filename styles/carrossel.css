@@ -60,11 +60,11 @@
   }
 
   .swiper-button-prev {
-    background-image: url("./img/setaesquerda.svg");
+    background-image: url("../img/setaesquerda.svg");
   }
 
   .swiper-button-next {
-    background-image: url("./img/setadireita.svg");
+    background-image: url("../img/setadireita.svg");
   }
 
   .swiper-button-next::after,

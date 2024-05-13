@@ -1,6 +1,10 @@
 .contato {
   background-color: var(--branco);
   padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contato__titulo,
@@ -12,28 +16,30 @@
 }
 
 .contato__titulo {
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
 }
 
 .contato__texto {
+  text-align: center;
+
   font-weight: 300;
   margin: 1em 0;
 }
 
 .contato__email {
   background-color: transparent;
-  padding: 1em;
+  height: 3em;
+  width: 45vw;
   border: 1px solid var(--azul);
   border-radius: 24px;
-  width: 55%;
   color: var(--azul);
 }
 
-.contato_cadastro {
+.contato__cadastro {
   display: flex;
   justify-content: center;
-  gap: 7%;
 }
 
 .contato__email:focus::placeholder {
@@ -48,7 +54,7 @@
 
 .contato__email::placeholder {
   font-family: var(--fonte-principal);
-  font-size: 13px;
+  font-size: 12px;
   color: var(--azul);
   background: url("../img/Email.svg") no-repeat;
   background-position: 0.6em;
@@ -57,46 +63,58 @@
 
 .contato_botao-cadastro {
   font-size: 13px;
-  padding: 1em;
-  border: 1px solid var(--azul);
+  padding: 1em 5vw;
   border-radius: 24px;
-  width: 30%;
   color: var(--branco);
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
   background-color: var(--azul);
-  font-size: 15px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 1024px) {
   .contato {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-right: 2em;
   }
 
-  .contato__email {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .contato__descricao {
     width: 30%;
     margin-right: 1em;
   }
 
   .contato__titulo {
+    text-align: start;
     font-size: 24px;
   }
 
+  .contato__texto {
+    text-align: start;
+
+  }
+
   .contato_cadastro {
+    display: flex;
     flex-direction: column;
   }
 
-  .contato_botao-cadastro {
-    width: 100%;
+  .contato__email {
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+  }
+
+  .contato__email::placeholder {
     text-align: center;
+    background-position: calc(50% - 65px);
+  }
+
+  .contato_botao-cadastro {
+    text-align: center;
+    padding: 1.2em 0;
+    margin: 0.5em;
   }
 }
 
